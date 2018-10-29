@@ -1,0 +1,20 @@
+footer {
+    text-align: center;
+    overflow: hidden;
+    
+    color: black;
+    margin-top: 4em;
+    padding-bottom: 5em;
+  
+    .logo {
+        
+        margin-bottom: -6em;
+    }
+  
+    p {
+      font-family: $ff-title;
+      line-height: 1;
+      margin: 0; 
+      color: $clr-yellow-light;
+    }
+  }

@@ -1,0 +1,79 @@
+.section--beer {
+    text-align: center;
+    overflow: hidden;
+    
+    .section__about {
+        max-width: 37rem;
+        margin: auto;
+    }
+  }
+  
+  .grid-carousel {
+    grid-column: 1 / -1;
+    display: grid;
+    grid: auto-flow / 2em repeat(5, 1fr) 2em;
+    max-width: 100%;
+    margin: 3em auto;
+    position: relative;
+
+    &__item {
+        @include applyOrder(5);
+        transform: scale(.7);
+
+        &.featured {
+          transform: scale(1);
+        }
+      }
+    
+      &__caption {
+        opacity: 0;
+      }
+    
+      &__item.featured &__caption {
+        opacity: 1;
+      }
+    
+  
+    &__button {
+      all: unset;
+      padding: .5em;
+      &:last-of-type {
+        order: 99;
+      }
+    }
+
+  
+    &::before,
+    &::after {
+      content: ''; 
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+    }
+  
+    &::before {
+      grid-column: 2 / 4;
+      background: linear-gradient(to right, rgba(rgb(29, 32, 48), 1), rgba(rgb(29, 32, 48), .6));
+    }
+  
+    &::after {
+      grid-column: -2 / -4;
+      background: linear-gradient(to left, rgba(rgb(29, 32, 48), 1), rgba(rgb(29, 32, 48), .6));
+    }
+  }
+
+  @media (max-width: 560px) {
+    .section__about {
+        width: 95%;
+        margin: auto;
+    }
+
+    .grid-carousel{
+      display: none;
+    }
+
+}
