@@ -11,6 +11,7 @@
         size: cover;
         attachment: fixed;
         repeat: no-repeat;
+        position: relative;
     }
     display: grid;
     grid: auto-flow/minmax(1em, 1fr) minmax(400px, 650px) minmax(1em, 1fr);

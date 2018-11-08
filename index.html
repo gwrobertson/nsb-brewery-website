@@ -9,12 +9,12 @@
 </head>
 <body>
   
-  <nav>
+  <nav class="nav-background-none">
     <ul>
-      <li><a href="#beer" class="scroll">Our Beer</a></li>
-      <li><a href="#mission" class="scroll">Our Mission</a></li>
-      <li><a href="#tours" class="scroll">Tours</a></li>
-      <li><a href="#taproom" class="scroll">Locations</a></li>
+      <li><a href="#beer">Our Beer</a></li>
+      <li><a href="#mission">Our Mission</a></li>
+      <li><a href="#tours">Tours</a></li>
+      <li><a href="#taproom">Locations</a></li>
     </ul>
   </nav>
 
@@ -41,73 +41,72 @@
     <p class="intro__text">For example, the Busch indicates that a tipsy bottle dances with some geosynchronous Sierra Nevada. Furthermore, the mug earns enough for a beer, and the usch indicates that a tipsy bottle dances with some geosynchronous Sierra Nevada. Furthermore, the mug earns enough for a beer, and the burglar ale borrows money from.</p>
   </section>
 
-  <section class="section section--beer">
-    <h2 class="section__title">The Beer</h2>
-    <p class="section__subtitle">Some of what we have on offer</p>
-    <p lass="section__about">For example, the Busch indicates that a tipsy bottle dances with some geosynchronous Sierra Nevada. Furthermore, the mug earns enough for a beer, and the burglar ale borrows money from.</p>
-    
-    <div class="grid-carousel">
-      <button class="grid-carousel__button js-left">
-          <svg id="left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 31">
-            <title>left-arrow</title>
-            <path id="left-arrow" d="M15.5,3.5l-12,12,12,12" transform="translate(0)" fill="none" stroke="#61ec5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/></svg>
-      </button>
-      <!-- carousel item 01 -->
-      <figure class="grid-carousel__item">
-        <img src="images/beer-1.png" class="grid-carousel__image">
-        <figcaption class="grid-carousel__caption">
-          <h3 class="grid-carousel__title">Moon Dust</h3>
-          <p class="grid-carousel__subtitle">Pale Ale</p>
-          <p class="grid-carousel__description">A pale and intensely hoppy beer. These Brewers Gold hops impart enticing tropical fruit aromas and a lovely thirst quenching bitterness.</p>
-        </figcaption>
-      </figure>
-
-      <!-- carousel item 02 -->
-      <figure class="grid-carousel__item">
-          <img src="images/beer-2.png" class="grid-carousel__image">
-          <figcaption class="grid-carousel__caption">
-            <h3 class="grid-carousel__title">Super Nova</h3>
-            <p class="grid-carousel__subtitle">Red IPA</p>
-            <p class="grid-carousel__description">Hoppy, bitter, and moderately strong like an American IPA, but with some caramel, toffee, and/or dark fruit malt character.</p>
-          </figcaption>
-        </figure>
-
-        <!-- carousel item 03 -->
-      <figure class="grid-carousel__item featured">
-          <img src="images/beer-3.png" class="grid-carousel__image">
-          <figcaption class="grid-carousel__caption">
-            <h3 class="grid-carousel__title">Saturn V</h3>
-            <p class="grid-carousel__subtitle">Pale Ale</p>
-            <p class="grid-carousel__description">A premium pale ale, golden in colour and deliciously fruity, packed full of cascade hops and then dry hopped for extra punch.</p>
-          </figcaption>
-        </figure>
-
-        <!-- carousel item 04 -->
-      <figure class="grid-carousel__item">
-          <img src="images/beer-4.png" class="grid-carousel__image">
-          <figcaption class="grid-carousel__caption">
-            <h3 class="grid-carousel__title">Black Hole</h3>
-            <p class="grid-carousel__subtitle">Stout</p>
-            <p class="grid-carousel__description">Our award winning revolutionary stout.  A hearty 4.9%, pitch black beer full of malty complexity balanced by a robust bitter bite.</p>
-          </figcaption>
-        </figure>
-
-        <!-- carousel item 05 -->
-      <figure class="grid-carousel__item">
-          <img src="images/beer-5.png" class="grid-carousel__image">
-          <figcaption class="grid-carousel__caption">
-            <h3 class="grid-carousel__title">Nebula</h3>
-            <p class="grid-carousel__subtitle">Dark Ruby Ale</p>
-            <p class="grid-carousel__description">A dark and interesting ale,  combining fruity hoppiness with a dark, malty side.  Is it a porter or maybe a mild? You decide?</p>
-          </figcaption>
-        </figure>
-
-        <button class="grid-carousel__button js-right">
-            <svg id="right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 31">
-              <title>right-arrow</title>
-              <path id="right-arrow" d="M3.5,27.49l12-12-12-12" transform="translate(0 0.01)" fill="none" stroke="#61ec5c" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"/>
-            </svg>
-        </button>
+  <section class="section section--beer" id="beer">
+    <div class="intro">
+      <h2 class="section__title">The Beer</h2>
+      <p class="section__subtitle">Some of what we have on offer</p>
+      <p lass="section__about">For example, the Busch indicates that a tipsy bottle dances with some geosynchronous Sierra Nevada. Furthermore, the mug earns enough for a beer, and the burglar ale borrows money from.</p>
+    </div>
+    <div class="container">
+      <ul class="beer--list">
+        <li>
+          <img src="images/beer-1.png" alt="">
+          <div class="beer--description">
+            <h3>Moon Dust</h3>
+            <h5>Pale Ale</h5>
+            <div class="more">
+              <p>Description</p>
+              <div class="overlay green">
+                <div class="text">A pale and intensely hoppy beer. These Brewers Gold hops impart enticing tropical fruit aromas and a lovely thirst quenching bitterness.</div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/beer-2.png" alt="">
+          <h3>Super Nova</h3>
+          <h5>Red IPA</h5>
+          <div class="more">
+            <p>Description</p>
+            <div class="overlay red">
+              <div class="text white-text">Hoppy, bitter, and moderately strong like an American IPA, but with some caramel, toffee, and/or dark fruit malt character.</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/beer-3.png" alt="">
+          <h3>Saturn V</h3>
+          <h5>Pale Ale</h5>
+          <div class="more">
+            <p>Description</p>
+            <div class="overlay yellow">
+              <div class="text">A premium pale ale, golden in colour and deliciously fruity, packed full of cascade hops and then dry hopped for extra punch.</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/beer-4.png" alt="">
+          <h3>Black Hole</h3>
+          <h5>Stout</h5>
+          <div class="more">
+            <p>Description</p>
+            <div class="overlay blue">
+              <div class="text white-text">Our award winning revolutionary stout.  A hearty 4.9%, pitch black beer full of malty complexity balanced by a robust bitter bite.</div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <img src="images/beer-5.png" alt="">
+          <h3>Nebula</h3>
+          <h5>Dark Ruby Ale</h5>
+          <div class="more">
+            <p>Description</p>
+            <div class="overlay pink">
+              <div class="text">A dark and interesting ale,  combining fruity hoppiness with a dark, malty side.  Is it a porter or maybe a mild? You decide?</div>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -121,7 +120,7 @@
     <img src="images/mission.jpg" alt="man smiling while working at brewery" class="front card--img">
   </section>
 
-  <section class="section section--taproom" id="taproom">
+  <section class="section section--taproom" id="tours">
     <div class="card card--light back">
       <h2 class="section__title">Taproom</h2>
       <div class="section__subtitle">Try our beers on location</div>
@@ -132,7 +131,7 @@
     <img src="images/keg.jpg" alt="waitress serving two flights of beer" class="front card--img">
   </section>
 
-  <section class="section section--brewery">
+  <section class="section section--brewery" id="taproom">
     <div class="section--brewery__map" id="map"></div>
     <div class="section--brewery__text-box">
       <h2 class="section__title">Our Locations</h2>
